@@ -533,3 +533,61 @@ label input {
     text-align: right;
     padding-bottom: calc(var(--line-height) / 2);
 }
+
+.divider {
+    text-align: center;
+    overflow: hidden;
+}
+
+.project-container {
+    border: var(--border-thickness) solid var(--text-color);
+    width: 100%;
+    padding: calc(var(--line-height) * 2);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: var(--line-height);
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: normal;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+}
+
+.project-item {
+    top: 0;
+    left: 0;
+    border: var(--border-thickness) solid var(--text-color);
+    text-align: center;
+    margin: auto;
+    height: calc(var(--line-height));
+    padding: calc(var(--line-height) * 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-color);
+    color: var(--text-color);
+    overflow: clip;
+    scroll-snap-align: center;
+    /* line-height: normal; */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+}
+
+.project-item:hover {
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent calc(var(--border-thickness) * 4),
+        var(--text-color) calc(var(--border-thickness) * 4),
+        var(--text-color) calc(var(--border-thickness) * 5)
+    );
+    font-weight: bold;
+    /* text-shadow: var(--background-color) 0 0 calc(var(--border-thickness) * 2); */
+    /* background: var(--background-color-alt);
+    color: var(--text-color-alt); */
+}
