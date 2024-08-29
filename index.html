@@ -9,7 +9,7 @@
         />
         <meta name="author" content="Oskar Wickström" />
         <meta name="dcterms.date" content="2024-08-26" />
-        <title>The Monospace Web</title>
+        <title>Beatrice BM</title>
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="index.css" />
     </head>
@@ -26,23 +26,16 @@
             <tr>
                 <th>Updated</th>
                 <td class="width-min">
-                    <time style="white-space: pre">2024-08-26</time>
+                    <time style="white-space: pre">2024-08-28</time>
                 </td>
-            </tr>
-            <tr>
-                <th class="width-min">Author</th>
-                <td class="width-auto">
-                    <a href="https://wickstrom.tech"
-                        ><cite>Oskar Wickström</cite></a
-                    >
-                </td>
-                <th class="width-min">License</th>
-                <td>MIT</td>
             </tr>
         </table>
-        <label class="debug-toggle-label"
-            ><input type="checkbox" class="debug-toggle" /> Debug mode</label
-        >
+        <label class="dark-toggle-label">
+            Dark mode <input type="checkbox" id="dark-toggle"
+        /></label>
+        <label class="debug-toggle-label">
+            Debug mode <input type="checkbox" class="debug-toggle"
+        /></label>
         <nav id="TOC" role="doc-toc">
             <h2 id="toc-title">Contents</h2>
             <ul class="incremental">
@@ -71,105 +64,8 @@
         </nav>
         <h2 id="introduction">Introduction</h2>
         <p>
-            Monospace fonts are dear to many of us. Some find them more
-            readable, consistent, and beautiful, than their proportional
-            alternatives. Maybe we’re just brainwashed from spending years in
-            terminals? Or are we hopelessly nostalgic? I’m not sure. But I like
-            them, and that’s why I started experimenting with all-monospace Web.
-        </p>
-        <p>
-            On this page, I use a monospace grid to align text and draw
-            diagrams. It’s generated from a simple Markdown document (using
-            Pandoc), and the CSS and a tiny bit of Javascript renders it on the
-            grid. The page is responsive, shrinking in character-sized steps.
-            Standard elements should <em>just work</em>, at least that’s the
-            goal. It’s semantic HTML, rendered as if we were back in the 70s.
-        </p>
-        <p>
-            All right, but is this even a good idea? It’s a technical and
-            creative challenge and I like the aestethic. If you’d like to use
-            it, feel free to fork or copy the bits you need, respecting the
-            license. I might update it over time with improvements and support
-            for more standard elements.
-        </p>
-        <h2 id="the-basics">The Basics</h2>
-        <p>
-            This document uses a few extra classes here and there, but mostly
-            it’s just markup. This, for instance, is a regular paragraph.
-        </p>
-        <p>Look at this horizontal break:</p>
-        <hr />
-        <p>
-            Lovely. We can hide stuff in the <code>&lt;details</code>&gt;
-            element:
-        </p>
-        <details>
-            <summary>A short summary of the contents</summary>
-            <p>Hidden gems.</p>
-        </details>
-        <h2 id="lists">Lists</h2>
-        <p>This is a plain old bulleted list:</p>
-        <ul class="incremental">
-            <li>Banana</li>
-            <li>Paper boat</li>
-            <li>Cucumber</li>
-            <li>Rocket</li>
-        </ul>
-        <p>Ordered lists look pretty much as you’d expect:</p>
-        <ol class="incremental" type="1">
-            <li>Goals</li>
-            <li>
-                Motivations
-                <ol class="incremental" type="1">
-                    <li>Intrinsic</li>
-                    <li>Extrinsic</li>
-                </ol>
-            </li>
-            <li>Second-order effects</li>
-        </ol>
-        <p>
-            It’s nice to visualize trees. This is a regular unordered list with
-            a <code>tree</code> class:
-        </p>
-        <ul class="tree">
-            <li>
-                <p style="margin: 0">
-                    <strong>/dev/nvme0n1p2</strong>
-                </p>
-                <ul class="incremental">
-                    <li>
-                        usr
-                        <ul class="incremental">
-                            <li>local<br /></li>
-                            <li>share<br /></li>
-                            <li>libexec<br /></li>
-                            <li>include<br /></li>
-                            <li>sbin<br /></li>
-                            <li>src<br /></li>
-                            <li>lib64<br /></li>
-                            <li>lib<br /></li>
-                            <li>bin<br /></li>
-                            <li>
-                                games
-                                <ul class="incremental">
-                                    <li>solitaire</li>
-                                    <li>snake</li>
-                                    <li>tic-tac-toe</li>
-                                </ul>
-                            </li>
-                            <li>media<br /></li>
-                        </ul>
-                    </li>
-                    <li>media<br /></li>
-                    <li>run<br /></li>
-                    <li>tmp</li>
-                </ul>
-            </li>
-        </ul>
-        <h2 id="tables">Tables</h2>
-        <p>
-            We can use regular tables that automatically adjust to the monospace
-            grid. They’re responsive.
+            Hi! I'm Beatrice, a data scientist and programmer passionate about
+            AI/ML fairness and data privacy.
         </p>
         <table>
             <thead>
@@ -370,5 +266,6 @@
         </p>
         <div class="debug-grid"></div>
         <script src="index.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
