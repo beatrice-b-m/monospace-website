@@ -1,7 +1,8 @@
-@import url("https://fonts.cdnfonts.com/css/jetbrains-mono-2");
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css");
+/* @import url("https://fonts.cdnfonts.com/css/jetbrains-mono-2"); */
 
 :root {
-    --font-family: "JetBrains Mono", monospace;
+    --font-family: Hack, monospace;
     --line-height: 1.2rem;
     --border-thickness: 2px;
     --text-color: #000;
@@ -23,14 +24,14 @@
 
 :root.dark-mode {
     --text-color: #fff;
-    --text-color-alt: #aaa;
-    --background-color: #000;
-    --background-color-alt: #111;
+    --text-color-alt: #838898; /* #aaa */
+    --background-color: #272b38;
+    --background-color-alt: #34394a;
 }
 
 :root.light-mode {
-    --text-color: #000;
-    --text-color-alt: #666;
+    --text-color: #34394a;
+    --text-color-alt: #b0b7ce; /* #666 */
     --background-color: #fff;
     --background-color-alt: #eee;
 }
@@ -416,7 +417,7 @@ label input {
     position: relative;
     padding-left: 1.5ch;
     margin-left: 1.5ch;
-    border-left: var(--border-thickness) solid var(--text-color);
+    border-left: var(--border-thickness) solid var(--text-color-alt);
 }
 .tree ul li:before {
     position: absolute;
@@ -425,7 +426,7 @@ label input {
     left: 0;
     content: "";
     width: 1ch;
-    border-bottom: var(--border-thickness) solid var(--text-color);
+    border-bottom: var(--border-thickness) solid var(--text-color-alt);
 }
 .tree ul li:last-child {
     border-left: none;
@@ -437,7 +438,7 @@ label input {
     left: 0;
     content: "";
     height: calc(var(--line-height) / 2);
-    border-left: var(--border-thickness) solid var(--text-color);
+    border-left: var(--border-thickness) solid var(--text-color-alt);
 }
 
 .grid {
